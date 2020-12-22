@@ -1,20 +1,22 @@
 import java.util.*;
 import java.util.Scanner;
 public class Calculator {
+    private static int num1;
     public static void main(String[] args)
     {
         System.out.println("5 and 4:");
         Scanner inp= new Scanner(System.in);
-        int 5 , 4;
         num1 = inp.nextInt();
         num2 = inp.nextInt();
         int ans;
-        System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
+        System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication,  4 for division and 5 for square:");
         int choose;
         choose = inp.nextInt();
         switch (choose){
         case 1:
-            System.out.println(add( num1,num2));
+                int y = 4;
+                int x = 5;
+                System.out.println(add( x, y));
             break;
         case 2:
             System.out.println(sub( num1,num2));
